@@ -33,6 +33,14 @@ inst.write(command)
 error_info = inst.query(":SYST:ERR?")
 print(error_info)
 
+#测量电流
+inst.write(":SENS:FUNC CURR")
+#Sets the measurement function (voltage, current, or resistance) or queries the current setting.
+
+current = inst.query("READ?")
+#Starts a new measurement and queries the measured results.
+#This command is equivalent to :INITiate;:FETCh?
+
 inst.close() #close visa
 
 ```
