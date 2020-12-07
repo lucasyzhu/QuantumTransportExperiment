@@ -10,7 +10,7 @@
 
 稀释制冷机上新安装了一个电贯穿，其中一个是Lemo 24Pin的接头，而实验室的仪器以及连接线基本都是BNC或者SMA接头，所以需要一个BNC转Lemo的接线盒。最终成品如下图所示：
 
-<img src="figures/fig1.png" style="zoom: 33%;" />
+<img src="figures/fig1.png" width="50%"  />
 
 
 
