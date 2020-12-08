@@ -130,7 +130,10 @@ https://item.taobao.com/item.htm?spm=a1z09.2.0.0.3fc92e8doFz2v2&id=574348612173&
 
 将BNC头和开关钮子安装到铝盒的顶板上，然后安装PCB板。
 
-<div align=center><img src="figures/fig3-2-1.png" width="28.8%" /><img src="figures/fig3-2-2.png" width="30.8%" /></div>
+<div align=center>
+    <img src="figures/fig3-2-1.png" width="28.8%" />
+    <img src="figures/fig3-2-2.png" width="30.8%" />
+</div>
 
 最后，将屏蔽线与PCB板焊接好。
 
