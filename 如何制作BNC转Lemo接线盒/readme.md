@@ -111,11 +111,17 @@ https://item.taobao.com/item.htm?spm=a1z09.2.0.0.3fc92e8doFz2v2&id=574348612173&
 
 由于lemo头中的线非常密，而当时我又没有好的办法去固定屏蔽线和lemo头，所以一开始的焊接工作遇到了困难。后来的解决办法是，如下左图，先将屏蔽线全部焊进排针的孔中，再将排针焊入lemo头，并用热塑管包扎，防止短路（将热风枪温度调到100度，对着热塑管吹，它就会变小，紧紧地包住导线）。使用的排针是右图中这种很普通的型号，用钳子将排针外部的塑料壳弄碎，即可取出内部的针。
 
-<div align=center><img src="figures/fig3-1-4.png" width="26.8%" /><img src="figures/fig3-1-5.png" style="zoom:60%;" /></div>
+<div align=center>
+    <img src="figures/fig3-1-4.png" width="26.8%" />
+    <img src="figures/fig3-1-5.png" width="20.2%" />
+</div>
 
 下面图是全部焊接好后的效果。由于空间有限，外圈的排针没有全部使用热塑管，所以最后用绝缘胶带将全部接头包住，防止短路。最后将lemo头的剩余部分都装上。需要额外注意的是，线的外部屏蔽层作为地线，一定要与lemo头的外壳有良好的接触。
 
-<div align=center><img src="figures/fig3-1-2.png" width="19.3%" /><img src="figures/fig3-1-3.png" style="zoom:41%;" /></div>
+<div align=center>
+    <img src="figures/fig3-1-2.png" width="19.3%" />
+    <img src="figures/fig3-1-3.png" width="24.6%" />
+</div>
 
 
 
@@ -124,7 +130,7 @@ https://item.taobao.com/item.htm?spm=a1z09.2.0.0.3fc92e8doFz2v2&id=574348612173&
 
 将BNC头和开关钮子安装到铝盒的顶板上，然后安装PCB板。
 
-<div align=center><img src="figures/fig3-2-1.png" width="21.0%" /><img src="figures/fig3-2-2.png" style="zoom:38.8%;" /></div>
+<div align=center><img src="figures/fig3-2-1.png" width="28.8%" /><img src="figures/fig3-2-2.png" width="30.8%" /></div>
 
 最后，将屏蔽线与PCB板焊接好。
 

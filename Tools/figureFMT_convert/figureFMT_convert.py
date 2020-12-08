@@ -17,12 +17,13 @@ for n_line in range( len(line_vec)):
     if ('/>' in line):
         if (not '</div>' in line): line = line.replace('\n','') + '</div>'+'\n'
     #修改图片缩放格式
-    if ('style="zoom:' in line):
-        pos_start = line.index('style="zoom')
-        pos_end   = line.index('%;"')+3
-        style_str = line[pos_start:pos_end]
-        zoom_ratio= float(style_str[12:-3])
-        line=line.replace(style_str, 'width="%.1f'%zoom_ratio+'%"')
+    while True:
+      if (not 'style="zoom:' in line): break
+      pos_start = line.index('style="zoom')
+      pos_end   = line.index('%;"')+3
+      style_str = line[pos_start:pos_end]
+      zoom_ratio= float(style_str[12:-3])
+      line=line.replace(style_str, 'width="%.1f'%zoom_ratio+'%"')
     #修改line_vec
     line_vec[n_line] = line
 
