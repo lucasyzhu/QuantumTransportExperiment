@@ -22,7 +22,7 @@
 
 https://item.taobao.com/item.htm?spm=a1z09.2.0.0.67002e8d5niR9B&id=590228108954&_u=s1kvjlgv0f09
 
-<img src="figures/fig2.png" style="zoom:50%;" />
+<div align=center><img src="figures/fig2.png" width="50.0%" /></div>
 
 
 
@@ -32,7 +32,7 @@ Lemo接头到了后，测量其接入屏蔽线那一端的，孔的尺寸，用�
 
 https://item.taobao.com/item.htm?spm=a1z09.2.0.0.3fc92e8dxxFUc3&id=13510737983&_u=s1kvjlgvd887
 
-<img src="figures/fig3.png" style="zoom: 50%;" />
+<div align=center><img src="figures/fig3.png" width="50.0%" /></div>
 
 **说明：** 由于对屏蔽线的精确尺寸，以及接上Lemo头后的实际效果没有把握，所以可以多买几种型号的线，毕竟太便宜了。比如本次，我购买了24芯0.15平方，和24芯0.2平方，两种线（长度都是2米）。拿到包裹后发现，0.2平米，即粗一点的线与Lemo接头刚好卡得很紧，很稳定。
 
@@ -44,7 +44,7 @@ https://item.taobao.com/item.htm?spm=a1z09.2.0.0.3fc92e8dxxFUc3&id=13510737983&_
 
 https://item.taobao.com/item.htm?spm=a1z09.2.0.0.3fc92e8dxxFUc3&id=631645623506&_u=s1kvjlgvcaaa
 
-<img src="figures/fig4.png" style="zoom: 45%;" />
+<div align=center><img src="figures/fig4.png" width="45.0%" /></div>
 
 
 
@@ -54,13 +54,13 @@ BNC说明：接线盒的外壳，属于公共的接地端，所以购买的BNC�
 
 https://detail.tmall.com/item.htm?id=582832733068&spm=a1z09.2.0.0.3fc92e8dxxFUc3&_u=s1kvjlgva80a
 
-<img src="figures/fig6.png" style="zoom:50%;" />
+<div align=center><img src="figures/fig6.png" width="50.0%" /></div>
 
 开关钮子的购买链接：
 
 https://item.szlcsc.com/295191.html
 
-<img src="figures/fig7.png" style="zoom: 50%;" />
+<div align=center><img src="figures/fig7.png" width="50.0%" /></div>
 
 
 
@@ -70,19 +70,19 @@ https://item.szlcsc.com/295191.html
 
 https://item.taobao.com/item.htm?spm=a1z09.2.0.0.3fc92e8doFz2v2&id=574348612173&_u=s1kvjlgv9dbc
 
-<img src="figures/fig2-5-3.png" style="zoom:60%;" />
+<div align=center><img src="figures/fig2-5-3.png" width="60.0%" /></div>
 
 店铺上提供的一些尺寸参数：
 
-<img src="figures/fig8.jpg" style="zoom:50%;" />
+<div align=center><img src="figures/fig8.jpg" width="50.0%" /></div>
 
 前板开孔信息（用于接入屏蔽线以及卡扣）：
 
-<img src="figures/fig2-5-1.png" style="zoom: 40%;" />
+<div align=center><img src="figures/fig2-5-1.png" width="40.0%" /></div>
 
 顶板的开孔信息（用于安装BNC和开关钮子）
 
-<img src="figures/fig2-5-2.png" style="zoom: 40%;" />
+<div align=center><img src="figures/fig2-5-2.png" width="40.0%" /></div>
 
 
 
@@ -90,9 +90,9 @@ https://item.taobao.com/item.htm?spm=a1z09.2.0.0.3fc92e8doFz2v2&id=574348612173&
 
 首先说明，PCB板并不是必须的选择，完全可以用导线进行盒子内部的连接。只是我个人觉得这些线在里面飞来飞去，看着很凌乱，焊接也很麻烦，所以使用PCB板来实现盒子内部的连接。绘制PCB时，使用的是立创eda软件，并在嘉立创进行PCB打样。注意，每个钮子开关控制左边对应BNC的接入状态，开关向上，BNC与内部线导通，开关向下，BNC与内部线断开，并让内部线接地。立创eda的学习被放到了本文的末尾。下面是原理图和PCB设计图（顶层）：
 
-<img src="figures/fig2-6-1.png" style="zoom:40%;" />
+<div align=center><img src="figures/fig2-6-1.png" width="40.0%" /></div>
 
-<img src="figures/fig2-6-2.png" style="zoom:60%;" />
+<div align=center><img src="figures/fig2-6-2.png" width="60.0%" /></div>
 
 
 
@@ -128,9 +128,9 @@ https://item.taobao.com/item.htm?spm=a1z09.2.0.0.3fc92e8doFz2v2&id=574348612173&
 
 最后，将屏蔽线与PCB板焊接好。
 
-<img src="figures/fig3-2-3.png" style="zoom:39%;" />
+<div align=center><img src="figures/fig3-2-3.png" width="39.0%" /></div>
 
-<img src="figures/fig3-2-4.png" style="zoom: 33%;" />
+<div align=center><img src="figures/fig3-2-4.png" width="33.0%" /></div>
 
 **说明：** 本次，我先焊接PCB和BNC、开关钮子，然后再焊接屏蔽线与PCB。更好的方式应该是先将屏蔽线焊接到PCB板上，再焊接BNC和开关钮子。
 
@@ -165,7 +165,7 @@ https://item.taobao.com/item.htm?spm=a1z09.2.0.0.3fc92e8doFz2v2&id=574348612173&
 
 - 这次是通过一整块电路板连接所有的器件。更好的方式是将该其分成4块小的电路板，每块对应下图中的一行，共6共BNC模块。这样做的好处：1. 减小绘图难度；2. 尺寸小了，PCB打样价格更低；3. 浪费更小（大PCB打样的最小数量是5块）；4. 最最重要的是，安装和拆卸会方便很多。
 
-  <img src="figures/fig2-6-2.png" style="zoom:60%;" />
+<div align=center>  <img src="figures/fig2-6-2.png" width="60.0%" /></div>
 
 ### 3. 其他
 
