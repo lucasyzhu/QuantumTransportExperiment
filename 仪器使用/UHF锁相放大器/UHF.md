@@ -14,9 +14,21 @@
 6. 学完3.1和3.1后，可以前往第6章节，学习信号处理的基本知识；
 7. 之后有问题再去查看说明书的其他内容
 
-### 2. python远程控制
+### 2. 远程控制
 
-1. 在pypi上下载库函数zhinst（网址：https://pypi.org/project/zhinst/）
+**驱动下载：**
+
+ - https://pypi.org/project/zhinst  #pypi上下载
+
+ - https://www.zhinst.com/americas/en/support/download-center
+
+     官网下载，包含Labview、Matlab、Python等API文件，文件中包含对应语言的实例程序，是非常好的学习资料。
+
+   
+
+**具体使用（以Python为例）：**
+
+1. 下载库函数zhinst
 
 2. 使用pip安装；
 
@@ -32,7 +44,7 @@
 
 4. 根据自己需要，学习相关python示例，然后就可以正式使用了；
 
-5. 在labone中的每次操作，对应控制代码就会出现在labone的下方。例如，修改通道2中的参照信号频率为100Hz，labone的下方就会显示`ziDAQ('setDouble', '/dev2374/oscs/1/freq', 100);`，对应的python代码就是：`daq.setDouble('/dev2374/oscs/1/freq', 100)`。set函数的第一个参数为UHF的目标节点，第二个参数为该节点的值。如果值是整数，则使用`setInt()`函数，如果为浮点数，则使用`setDouble()`。
+5. 在labone中的每次操作，对应控制代码就会出现在labone的下方（该功能非常方便）。例如，修改通道2中的参照信号频率为100Hz，labone的下方就会显示`ziDAQ('setDouble', '/dev2374/oscs/1/freq', 100);`，对应的python代码就是：`daq.setDouble('/dev2374/oscs/1/freq', 100)`。set函数的第一个参数为UHF的目标节点，第二个参数为该节点的值。如果值是整数，则使用`setInt()`函数，如果为浮点数，则使用`setDouble()`。
 
 
 
@@ -51,16 +63,32 @@ ref_synchronize_setting = [
     ['/dev2374/extrefs/0/enable', 1],
     ['/dev2374/demods/3/adcselect', 11]]
 daq.set(ref_synchronize_setting)
-time.sleep(1)                    #等待一定时间，完成物理设置
+time.sleep(1)                    #等待一定时间，完成设置
 ```
 
+**Notes:** 在信号频率较高时，例如大于10MHz，该同步方法将失效，两通道测量同一信号，出现明显相位差（可能原因：说明书p72）。更好的方式是使用外部信号源，接入Ref/Trigger，作为两通道的参照信号。
 
 
-### 2. 与外部的参照信号同步
+
+### 2. 使用外部参照信号
+
+参考说明书Page73，Section 3.2.4 Using Ref / Trigger Input and Output for Referencing
+
+**步骤：**
+
+1. 将用微波线将外部参照信号接入Ref/Trigger（这里以Ref/Trigger 1为例，说明书中Figure 3.9）
+
+2. 如果Signal Input1作为待测信号的输入端，则Demod4用于设置参照信号源：
+
+   <img src="figures/extRef_setting.PNG" style="zoom: 67%;" />
+
+3. 再将Demod 1,2,3中的某一个用于锁相测量（不确定还能否使用Demod4来执行锁相测量）
+
+
 
 **零碎的知识点：**
 
-- 由于触发机制的影响，最好使用方波来同步UHF中的参照信号。如果使用正弦波，可能存在明显的相位差；
+- 最好使用方波来同步UHF中的参照信号，因为方波的上升沿更陡，触发更精准。如果使用正弦波，可能存在明显的相位差；
 
 - 下图为Refernce选择为External Reference 或者 internal Refernce（Manual）时，Oscillator图标的区别
 
@@ -402,4 +430,4 @@ zhinst.utils.sigin_autorange(daq, device, in_channel) #调整输入端的range�
 
   <img src="figures/pollProblem.png" style="zoom: 80%;" />
 
- - 为什么低频时（100Hz），UHF的输出直接接输入，锁相测量的输入与输出幅值不相等（Gain=0.8），相位差也很明显（40deg）
+ - 为什么低频时（100Hz），UHF的输出直接接输入，锁相测量的输入与输出幅值不相等（Gain=0.8）
