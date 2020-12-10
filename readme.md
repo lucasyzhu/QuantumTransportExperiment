@@ -31,3 +31,8 @@
 ### 4. 如何制作BNC转Lemo接线盒
 
 <img src="如何制作BNC转Lemo接线盒/figures/fig1.png" width="50%" />
+
+
+
+### 5. 锁相放大器基本原理
+
