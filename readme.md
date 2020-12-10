@@ -30,4 +30,4 @@
 
 ### 4. 如何制作BNC转Lemo接线盒
 
-<img src="如何制作BNC转Lemo接线盒/figures/fig1.png" style="zoom:33%;" />
+<img src="如何制作BNC转Lemo接线盒/figures/fig1.png" width="50%" />
