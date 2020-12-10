@@ -280,7 +280,6 @@ time.sleep(1)                    #等待一定时间，完成设置
   ```python
 zhinst.utils.sigin_autorange(daq, device, in_channel) #调整输入端的range（ADC前的放大器）
   # Perform an automatic adjustment of the signal inputs range based on the
-  ​```
   # measured input signal's amplitude measured over approximately 100 ms.
   # This is important to obtain the best bit resolution on the signal inputs
   # of the measured signal in the scope.
