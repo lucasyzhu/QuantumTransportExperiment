@@ -80,7 +80,7 @@ time.sleep(1)                    #等待一定时间，完成设置
 
 2. 如果Signal Input1作为待测信号的输入端，则Demod4用于设置参照信号源：
 
-   <img src="figures/extRef_setting.PNG" style="zoom: 67%;" />
+<div align=center>   <img src="figures/extRef_setting.PNG" width="47.0%" /></div>
 
 3. 再将Demod 1,2,3中的某一个用于锁相测量（不确定还能否使用Demod4来执行锁相测量）
 
@@ -92,9 +92,9 @@ time.sleep(1)                    #等待一定时间，完成设置
 
 - 下图为Refernce选择为External Reference 或者 internal Refernce（Manual）时，Oscillator图标的区别
 
-<img src="figures/Osc_ExtRef.png" style="zoom:70%;" />
+<div align=center><img src="figures/Osc_ExtRef.png" width="50.0%" /></div>
 
-<img src="figures/Osc_Manual.png" style="zoom:70%;" />
+<div align=center><img src="figures/Osc_Manual.png" width="50.0%" /></div>
 
 - 当Reference Mode选择为ExtRef时，osc会根据外部的输入信号，自动生成与之匹配的reference signal，该过程需要一定时间。且，此时Osc的Freq项变灰色，表示不能手动修改，因为它应该由外部信号决定。
 
@@ -427,6 +427,6 @@ time.sleep(1)                    #等待一定时间，完成设置
   plt.xlim([0,200])
   ```
 
-  <img src="figures/pollProblem.png" style="zoom: 80%;" />
+<div align=center>  <img src="figures/pollProblem.png" width="80.0%" /></div>
 
  - 为什么低频时（100Hz），UHF的输出直接接输入，锁相测量的输入与输出幅值不相等（Gain=0.8）
