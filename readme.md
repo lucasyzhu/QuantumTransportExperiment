@@ -21,6 +21,8 @@
 
 **说明：** 如何用python代替Labview，搭建带图形界面的程序，实现自动化测量。在QuantumTransportExpSoftware文件夹里有该测量软件的python源代码（QTL），以及用pyinstaller打包得到的可执行文件（win10Exe），如果有兴趣，可以尝试下载下来，玩一玩。
 
+**TODO**：将程序拆成各个独立的模块，程序结构更加简洁。
+
 
 
 ### 3. 一些必要仪器的使用方法
