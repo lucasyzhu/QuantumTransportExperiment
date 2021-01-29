@@ -1,1 +1,0 @@
-Typora中的图片显示方式与Github的显示方式不一样，所以需要一个小的转换工具。在Typora中写好readme文件后，用该脚本自动转换readme中的设计图片的段落，然后再上传到G ithub。
