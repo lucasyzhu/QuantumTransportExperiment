@@ -49,7 +49,7 @@ def html_modify(fileName):
         
         #----------------------------------------------------------------
         #4. 修改根目录
-        link_str = 'http://www.yuexiaokai.com'
+        link_str = 'http://www.yxkblog.com'
         if (link_str in line): line=line.replace(link_str, ""); #全部删除
 
         #----------------------------------------------------------------

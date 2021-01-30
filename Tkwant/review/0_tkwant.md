@@ -17,12 +17,12 @@
 
 **目录：**
 
-1. [波函数在无限深势阱中的演化](http://www.yuexiaokai.com/StudyNotes/tkwant/1_波函数在无限深势阱中的演化.html)
-2. [波函数在平直空间的演化（吸收势的使用）](http://www.yuexiaokai.com/StudyNotes/tkwant/2_波函数在平直空间的演化（吸收势的使用）.html)
-3. [定态散射](http://www.yuexiaokai.com/StudyNotes/tkwant/3_定态散射.html)
-4. [散射态的时域演化](http://www.yuexiaokai.com/StudyNotes/tkwant/4_散射态的时域演化.html)
-5. [多体态的演化](http://www.yuexiaokai.com/StudyNotes/tkwant/5_多体态的演化.html)
-6. [Fabry_Perot_interferometer](http://www.yuexiaokai.com/StudyNotes/tkwant/6_Fabry_Perot_interferometer.html)
-7. [tkwants使用总结](http://www.yuexiaokai.com/StudyNotes/tkwant/7_tkwants使用总结.html)
-8. [其他](http://www.yuexiaokai.com/StudyNotes/tkwant/8_其他.html)
+1. [波函数在无限深势阱中的演化](http://www.yxkblog.com/StudyNotes/tkwant/1_波函数在无限深势阱中的演化.html)
+2. [波函数在平直空间的演化（吸收势的使用）](http://www.yxkblog.com/StudyNotes/tkwant/2_波函数在平直空间的演化（吸收势的使用）.html)
+3. [定态散射](http://www.yxkblog.com/StudyNotes/tkwant/3_定态散射.html)
+4. [散射态的时域演化](http://www.yxkblog.com/StudyNotes/tkwant/4_散射态的时域演化.html)
+5. [多体态的演化](http://www.yxkblog.com/StudyNotes/tkwant/5_多体态的演化.html)
+6. [Fabry_Perot_interferometer](http://www.yxkblog.com/StudyNotes/tkwant/6_Fabry_Perot_interferometer.html)
+7. [tkwants使用总结](http://www.yxkblog.com/StudyNotes/tkwant/7_tkwants使用总结.html)
+8. [其他](http://www.yxkblog.com/StudyNotes/tkwant/8_其他.html)
 

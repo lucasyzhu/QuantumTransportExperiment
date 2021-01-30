@@ -11,7 +11,7 @@
 
 ## 学习笔记
 
-- [**Tkwant**](http://www.yuexiaokai.com/StudyNotes/tkwant/0_tkwant.html)
+- [**Tkwant**](http://www.yxkblog.com/StudyNotes/tkwant/0_tkwant.html)
   A Python package to simulate time-dependent quantum transport in nanoelectronic devices.
 
 
@@ -49,4 +49,4 @@
 
 ## 其他
 
-- [**建站经历**](http://www.yuexiaokai.com/其他/建站经历/建站经历.html)
+- [**建站经历**](http://www.yxkblog.com/其他/建站经历/建站经历.html)
