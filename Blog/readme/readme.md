@@ -15,3 +15,42 @@
    - 使用scp命令上传到服务器中
    - 重启supervisor
 7. 完成部署
+
+
+
+**服务器重置后，大致的设置步骤**
+
+Ref：[flask的web部署云服务器——史上最详细小白教程没有之一](https://blog.csdn.net/qq_40831778/article/details/104639076)
+
+- 进入root，`vi /etc/ssh/sshd_config`，添加
+  `ClientAliveInterval 30`
+  `ClientAliveCountMax 300`
+
+- `sudo apt-get install python3-venv`
+
+- `python3 -m venv Env` #创建虚拟环境
+
+  pip安装flask、gunicorn
+
+
+- `sudo apt-get install supervisor`
+
+- ` echo_supervisord_conf > /etc/supervisor/supervisord.conf`
+
+- ` vim  /etc/supervisor/supervisord.conf`  
+
+  #去掉末尾的两个";"
+
+  [include]
+
+  files = /flask/root/demoapp/demoapp_supervisor.conf
+
+- 修改supervisor.conf文件
+
+- 添加supervisor_err.log，supervisor.log文件
+
+- `supervisord -c /etc/supervisor/supervisord.conf`
+
+- `supervisorctl -c /etc/supervisor/supervisord.conf status demoapp`
+
+

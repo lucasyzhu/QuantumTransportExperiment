@@ -11,7 +11,7 @@
 - 1-6小节是自己写的代码重复tkwant对1维系统的计算，用来理解tkwant的算法；
 - 第7小节是以Fabry_Perot_interferometer为例，总结一些命令的含义，以及如何查看tkwant中的关键量；
 - 第8小节是总结如何使用tkwant的log功能
-- 程序源码在我的[github](https://github.com/Kaige213/QuantumTransportExperiment/tree/master/tkwant)中（用jupyter notebook打开）
+- 程序源码在我的[github](https://github.com/Kaige213/QuantumTransportExperiment/tree/master/Tkwant)中（用jupyter notebook打开）
 
 
 

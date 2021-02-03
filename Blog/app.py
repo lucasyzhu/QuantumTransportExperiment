@@ -17,4 +17,4 @@ def other_section(name):
     return render_template('/其他/建站经历/%s'% escape(name))
   
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8080)
+    app.run(host='0.0.0.0', port=80)
