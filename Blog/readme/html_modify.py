@@ -5,6 +5,9 @@ from   PIL import Image
 
 
 def html_modify(fileName):
+    print()
+    print('-----------------------------------------------')
+    print("文件名： ", fileName)
     #读取readme.md文件
     inputFile = open(fileName, 'r')
     line_vec   = inputFile.readlines()
@@ -18,9 +21,11 @@ def html_modify(fileName):
           if ("<body class='typora-export'>" in line):
             break
       line_vec.insert(n_line, home_button)
+      print("添加Home键")
     
     #----------------------------------------------------------------
     #2.修改title为head1，而不是与文件名相同
+    print("修改Title")
     for n_line in range( len(line_vec)):
         line    = line_vec[n_line]      
         h1_name = re.findall(r'<span>(.+?)</span></h1>',line)
@@ -37,6 +42,8 @@ def html_modify(fileName):
             #修改line_vec
             line_vec[n_line] = line
             break
+            
+            
     
     #逐行判断是否需要修改
     for n_line in range( len(line_vec)):
@@ -45,17 +52,21 @@ def html_modify(fileName):
         #----------------------------------------------------------------
         #3. 删除第5行的连接     
         link_str = "<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />"
-        if (link_str in line): line=line.replace(link_str, "",1);
+        if (link_str in line): 
+            line=line.replace(link_str, "",1);print("删除链接")
         
         #----------------------------------------------------------------
         #4. 修改根目录
         link_str = 'http://www.yxkblog.com'
-        if (link_str in line): line=line.replace(link_str, ""); #全部删除
+        if (link_str in line): 
+            line=line.replace(link_str, ""); #全部删除
+            print("修改根目录")
 
         #----------------------------------------------------------------
         #5. 修改其中的图片格式
-        output = re.findall(r'<img src=(.+?) />',line)
+        output = re.findall(r'<img src=(.+?)>',line)
         for figure_str in output:
+            print("修改图片，图片名：", figure_str)
             #找到图片文件名和缩放尺寸
             figure_name = re.findall(r'"(.+?)" style',figure_str)
             zoom_ratio  = re.findall(r'zoom:(.+?)%;',figure_str)
