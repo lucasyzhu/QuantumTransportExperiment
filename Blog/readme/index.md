@@ -36,3 +36,13 @@
 ## 其他
 
 - [**建站经历**](http://www.yxkblog.com/其他/建站经历/建站经历.html)
+
+- **关注的博客**
+
+  专业相关或者有趣的
+
+  - [Ji-Huan Guan](http://www.guanjihuan.com/)
+  
+  - [HelloFlask](http://helloflask.com/)
+  - [Some Notes on Mathematics](https://bookdown.org/yifei/book/)
+
