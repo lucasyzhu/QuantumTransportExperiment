@@ -235,7 +235,8 @@ def web_deploy():
   #将新的Blog项目发送到服务器端
   mp1 = multiprocessing.Process(target=enter_passwd,args=(passwd,))
   mp1.start()
-  os.system('scp -r ../../Blog  ubuntu@101.32.204.72:Blog')
+  #os.system('scp -n -r ../../Blog  ubuntu@101.32.204.72:Blog')
+  os.system('rsync -avzu --progress ../../Blog  ubuntu@101.32.204.72:Blog')
 
   #重启supervisor
   cmd_str = 'ssh ubuntu@101.32.204.72 -tt <<EOT \n\
