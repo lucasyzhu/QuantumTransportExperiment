@@ -6,6 +6,7 @@
 
 - 研究生期间关于量子输运实验的一些经验和工作总结，希望有所帮助。有任何疑惑，或者建议，欢迎联系我：yuexiaokai@outlook.com；
 - 如果readme文件中有乱码的latex公式，需要将文件下载下来，用Markdown编辑器查看，推荐使用Typora（最优雅方便的Markdown编辑器）；
+- 个人博客：http://www.yxkblog.com/
 
 
 
